@@ -1,7 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.nav-scroll {
-    @apply backdrop-blur-sm bg-sky-600 bg-opacity-60
-}
