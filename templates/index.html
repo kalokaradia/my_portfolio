@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+
+{% load static %} 
+
+
+{% comment %} 
+! == WEB  REQUIREMENTS == ! 
+{% endcomment %}
+
+{% comment %}
+? css files ?
+{% endcomment %}
+{% block css_files %}
+<link
+	type="text/css"
+	rel="stylesheet"
+	href="{% static 'css/output.css' %}"
+/>
+{% endblock css_files %} 
+
+{% comment %}
+? js files ?
+{% endcomment %}
+{% block js_files %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock js_files %}
+
+
+{% comment %} 
+! == WEB PARTS == ! 
+{% endcomment %}
+
+{% comment %} 
+? navbar ?
+{% endcomment %}
+{% block navbar %} 
+{% include "snippets/navbar.html" %}
+{% endblock navbar %}
+
+{% comment %} 
+? jumbotron ?
+{% endcomment %}
+{% block jumbotron %} 
+{% include "snippets/jumbotron.html" %}
+{% endblock jumbotron %}
+
+
+{% comment %} 
+? about ?
+{% endcomment %}
+{% block about %} 
+{% include "snippets/about.html" %}
+{% endblock about %}
+
+
+{% comment %} 
+? projects ?
+{% endcomment %}
+{% block projects %} 
+{% include "snippets/projects.html" %}
+{% endblock projects %}
+
+
+{% comment %} 
+? skills ?
+{% endcomment %}
+{% block skills %} 
+{% include "snippets/skills.html" %}
+{% endblock skills %}
+
+
+{% comment %} 
+? experience ?
+{% endcomment %}
+{% block experience %} 
+{% include "snippets/experience.html" %}
+{% endblock experience %}
+
+
+{% comment %} 
+? gallery ?
+{% endcomment %}
+{% block gallery %} 
+{% include "snippets/gallery.html" %}
+{% endblock gallery %}
+
+
+{% comment %} 
+? contact ?
+{% endcomment %}
+{% block contact %} 
+{% include "snippets/contact.html" %}
+{% endblock contact %}
+
+
+{% comment %} 
+? footer ?
+{% endcomment %}
+{% block footer %} 
+{% include "snippets/footer.html" %}
+{% endblock footer %}

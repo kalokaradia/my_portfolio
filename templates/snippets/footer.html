@@ -1,0 +1,18 @@
+<footer id="footer">
+    <svg xmlns="http://www.w3.org/2000/svg" class="block -mb-4" viewBox="0 0 1440 320"><path fill="#0284c7" fill-opacity="1" d="M0,64L34.3,85.3C68.6,107,137,149,206,176C274.3,203,343,213,411,208C480,203,549,181,617,144C685.7,107,754,53,823,48C891.4,43,960,85,1029,112C1097.1,139,1166,149,1234,138.7C1302.9,128,1371,96,1406,80L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    <div class="bg-sky-600">
+        <div class="w-full mx-auto container max-w-screen-xl py-14 md:flex md:items-center md:justify-between">
+            <h1 class="text-lg flex items-center sm:text-center text-white font-semibold">Created with <svg xmlns="http://www.w3.org/2000/svg" fill="#e11d48" viewBox="0 0 24 24" stroke-width="1.5"  class="size-8 mx-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>by<span class="underline ml-2"> Kaloka Radia Nanda</span></h1>
+            <ul class="flex flex-wrap max-sm:flex-col sm:items-center mt-3 max-sm:space-y-4 max-sm:mt-10 text-base sm:space-x-4 text-white sm:mt-0">
+                {% for nav in nav_link %}
+
+                <li>
+                    <a href="{{nav.link}}" class="max-sm:hover:bg-sky-800 px-4 py-2 w-full block rounded-lg">{{nav.name}}</a>
+                </li>
+
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</footer>

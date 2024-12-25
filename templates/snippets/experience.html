@@ -1,0 +1,19 @@
+<section id="experience" class="py-40">
+    <div class="container">
+        <a href="/#experience" class="block max-md:text-3xl text-center text-4xl font-bold"><span class="text-sky-600"># </span>My Experience</a>
+        <p class="text-xl text-center mt-5 max-md:text-lg max-w-4xl mx-auto">Pengalaman adalah guru terbaik. Berikut adalah beberapa momen penting dalam perjalanan saya yang menginspirasi saya untuk terus belajar dan berkembang.</p>
+
+        <div class="mt-10 grid grid-cols-4 max-md:text-base max-md:grid-cols-2 max-sm:grid-cols-1 gap-4">
+            {% for achievement in achievements %}
+
+            <div class="max-w-sm p-6 rounded-lg shadow hover:rotate-2 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer max-sm:mx-auto bg-gray-800 border-gray-700 hover:bg-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">{{achievement.event}}</h5>
+                <p class="font-normal text-gray-200 mt-5 mb-3">{{achievement.date}}</p>
+                <p class="font-normal text-lg text-gray-400">{{achievement.description}}</p>
+            </div>
+    
+            
+            {% endfor %}
+        </div>
+    </div>
+</section>

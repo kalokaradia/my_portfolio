@@ -1,0 +1,19 @@
+{% load static %}
+<section id="gallery" class="py-40">
+    <div class="container">
+        <a href="/#gallery" class="block max-md:text-3xl text-center text-4xl font-bold"><span class="text-sky-600"># </span>My Gallery</a>
+        <p class="text-xl text-center mt-5 mb-10 max-md:text-lg max-w-4xl mx-auto">
+            Visual menceritakan kisah yang lebih dari kata-kata. Temukan dokumentasi perjalanan dan karya saya di sini.
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {% for img in gallery %}
+            
+            <div>
+                <img class="h-auto max-w-full object-cover rounded-lg hover:scale-105 hover:rotate-2 transition-all duration-300 ease-in-out shadow-md" src="{% static img %}" alt="jumbotron image">
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</section>
