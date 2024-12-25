@@ -17,7 +17,7 @@ node_modules/
 # Source files
 /src/temp/
 src/debug.log
-/src/
+src/
 
 # System files
 .DS_Store
