@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+
+# Runtime files
+*.log
+*.txt
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Compiled output
+/dist
+/build
+
+# Source files
+/src/temp/
+src/debug.log
+/src/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.swp
